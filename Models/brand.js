@@ -1,6 +1,6 @@
 const { Schema } = require('mongoose');
 
-const BrandSchema = new Schema(
+const brandSchema = new Schema(
   {
     name: { type: String, required: true },
     url: { type: String, required: true },
@@ -8,4 +8,4 @@ const BrandSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('Brand', BrandSchema);
+module.exports = brandSchema
