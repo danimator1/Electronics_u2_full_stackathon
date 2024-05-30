@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="/Client/style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="/Client/script.js"></script>
   <title>Electronics</title>
 </head>
 <body>
@@ -13,8 +14,8 @@
     <div class="main-title">
       <h1>Electronics</h1>
     </div>
-    
-    <div class="wrap">
+    <!-- Search Bar -->
+    <div class="wrap-p">
       <div class="search">
          <input type="text" class="searchTerm" placeholder="Search">
          <button type="submit" class="searchButton">
@@ -22,6 +23,19 @@
         </button>
       </div>
    </div>
+   <!-- Procuct List Display-->
+    <div class="product-list">
+      <div class="product-img" id="productImg">
+        <img src="" width="200">
+      </div>
+
+      <div class="product-list-info">
+        <h2 id="product-title"></h2>
+        <h4 id="product-brand"></h4>
+        <p id="product-description"></p>
+        <p id="product-price"></p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
